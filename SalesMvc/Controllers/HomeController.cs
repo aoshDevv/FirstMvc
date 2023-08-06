@@ -18,6 +18,19 @@ namespace SalesMvc.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            ViewData["Message"] = "First Web MVC Using ASP.NET and C#";
+
+            return View();  
+        }
+
+        public IActionResult Contact()
+        {
+            ViewData["email"] = "vitoxdantas@gmail.com";
+            
+            return View();  
+        }
         public IActionResult Privacy()
         {
             return View();
